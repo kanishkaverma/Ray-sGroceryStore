@@ -5,6 +5,7 @@
 <html>
 <head>
 <title>kanishk's Grocery Order List</title>
+	<link href="bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <div class="header">

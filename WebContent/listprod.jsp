@@ -6,6 +6,7 @@
 <html>
 <head>
     <title>kanishka's Grocery</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <div class="header">
@@ -61,7 +62,7 @@
                 double price = rst2.getDouble(2);
 
                 int id = rst2.getInt(3);
-                out.print("<tr>" +  "<td>" +"<a href="+"addcart.jsp?id="+ id+ "&name="+productnamehtml+"&price="+ price+">" +"Add To Cart" + "</a>" + "</td><td><a href = product.jsp?id="+id+">" + productname + "</a>"+ "</td>" + "<td>" +
+                out.print("<tr>" +  "<td>" +"<a href="+"addcart.jsp?id="+ id+ "&name="+productnamehtml+"&price="+ price+">" +"Add To Cart " + "</a>" +" "+ "</td><td align=\"center\"><a href = product.jsp?id="+id+">" + productname + "</a>"+ "</td>" + "<td>" +
                         currFormat.format(price)  + "</td></tr>");
             }
             out.print("</table>");

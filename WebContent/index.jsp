@@ -2,6 +2,7 @@
 <html>
 <head>
         <title>Ray's Grocery Main Page</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <h1 align="center">Welcome to Ray's Grocery</h1>
