@@ -16,7 +16,13 @@
 		<a class="active" href="listprod.jsp">products</a>
 		<a href="listorder.jsp">Orders</a>
 		<a href="showcart.jsp">Cart</a>
-		<a href="shop.html">Home</a>
+		<a href="index.jsp">Home</a>
+		<%session = request.getSession(true);
+			String namex = (String) session.getAttribute("authenticatedUser");
+			if (namex != null) {
+				out.print("Logged in as:" + namex);
+			}
+		%>
 	</div>
 </div>
 
@@ -36,6 +42,7 @@ else
 
 	out.println("<h1>Your Shopping Cart</h1>");
 	out.print("<table><tr><th>Product Id</th><th>Product Name</th><th>Quantity</th>");
+
 	out.println("<th>Price</th><th>Subtotal</th></tr>");
 
 	double total =0;
